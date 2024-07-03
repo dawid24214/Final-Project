@@ -4,11 +4,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header/Header'
-import Test1 from './Header/Test1.jsx'
 function App() {
     return (
         <>
-            <Test1 />
             <Header />
         </>
     )

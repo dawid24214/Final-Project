@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import Runnav from './1Nav/nav.jsx';
+import MyLogo from './2logo/logo.jsx'
 function Header() {
     return (
         <div>
-            <h1>Jest  Tracker</h1>
-            <p>Keep track of your expenses</p>
+            <MyLogo />
+            <Runnav />
         </div>
     );
 }
