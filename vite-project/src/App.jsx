@@ -2,15 +2,18 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './Header/Header'
+import './App.css';
+import Header from './Header/Header';
+
 function App() {
-    return (
-        <>
+    return(
+        <div>
             <Header />
-        </>
-    )
+        </div>
+    );
 }
+
+
 /*function App() {
   const [count, setCount] = useState(0)
 
