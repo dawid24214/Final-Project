@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import style from './_nav.module.scss';
 
 function nav(){
     return(
-        <div>
+        <nav className={style.nav}>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     )
 }
 export default nav;
