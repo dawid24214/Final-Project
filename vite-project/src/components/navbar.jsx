@@ -7,10 +7,12 @@ import {Link} from "react-router-dom";
 const Navbar = () => {
     return(
         <div className="navbar">
-            <div className='Links'>
+            <div className='links'>
                 <Link to='/'>Sklep </Link>
                 <Link to='/Kontak'>Kontakt</Link>
-                <Link to='/Produkty'><ShoppingCart size={10}/></Link>
+                <Link to='/Produkty'>
+                    <ShoppingCart size={38}/>
+                </Link>
             </div>
         </div>
     );
