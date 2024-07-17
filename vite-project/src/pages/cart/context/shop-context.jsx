@@ -1,8 +1,8 @@
 import {createContext, useEffect, useState} from "react";
-import PRODUCTS from "../products.js";
+import PRODUCTS from "../../../products.js";
 
 
-const ShopContext = createContext(null);
+export const ShopContext = createContext(null);
 
 const getDefaultCart = () =>{
     let cart = {};
@@ -15,7 +15,7 @@ const getDefaultCart = () =>{
 
 
 
-export const ShopContextProvider = (props) => {
+ const ShopContextProvider = (props) => {
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
     const getTotalCartAmount = () =>{
@@ -55,6 +55,4 @@ export const ShopContextProvider = (props) => {
         </ShopContext.Provider>
     );
 };
-
-
- export default ShopContext;
+export default  ShopContextProvider ;

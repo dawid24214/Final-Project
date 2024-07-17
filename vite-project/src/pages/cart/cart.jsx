@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import PRODUCTS  from "../../products.js";
-import ShoppContext from 'src/context/shop-context.jsx';
-import CartItem from 'src/pages/cart/cart-item.jsx';
+import ShoppContext from '../cart/context/shop-context.jsx';
+import CartItem from '../cart/cart-item.jsx';
 import {useNavigate} from "react-router-dom";
 
 
