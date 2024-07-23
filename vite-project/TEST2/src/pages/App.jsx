@@ -5,6 +5,8 @@ import {Shop} from "./shop/shop.jsx";
 import {Contact} from "./contact.jsx";
 import {Cart} from "./Cart/cart.jsx";
 import {ShopContextProvider} from "./context/Shop-context.jsx";
+import Order from "./OrderNow/Order.jsx";
+
 
 const Layout = () => {
     return (
@@ -23,6 +25,7 @@ const Router = () => {
                     <Route index element={<Shop/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                     <Route path="/cart" element={<Cart/>}/>
+                    <Route path='/order' element={<Order/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -2,7 +2,6 @@ import React, {useContext} from "react";
 import {PRODUCTS} from "../products.js";
 import { ShopContext } from "../context/Shop-context.jsx";
 import {CartItem} from "./cart-item.jsx";
-
 import { useNavigate } from "react-router-dom";
 
 import "./_cart.scss";
@@ -11,6 +10,11 @@ export const Cart = () => {
     const totalAmount = getTotalCartAmount();
 
     const navigate = useNavigate();
+
+
+    const handleProceedToOrder = () =>{
+        navigate('/order');
+    }
 
     return (
         <div className="cart">
@@ -32,12 +36,13 @@ export const Cart = () => {
                     <button
                         onClick={() => {
                             checkout();
-                            navigate("/checkout");
+                            navigate("/order");
                         }}
                     >
                         {" "}
                         Zamów teraz! {" "}
                     </button>
+
                 </div>
             ) : (
                 <h1> Twoj koszyk jest pusty !</h1>
