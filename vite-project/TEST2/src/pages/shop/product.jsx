@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import {ShopContext} from "../context/Shop-context.jsx";
-import {ShoppingCart} from "phosphor-react"; // Zmiana importu
+import {ShoppingCart} from "phosphor-react";
+import '../_mixin.scss';
 
 export const Product = (props) => {
     const {id, productName, price, productImage} = props.data;
@@ -18,8 +19,6 @@ export const Product = (props) => {
             );
         } else {
             return <ShoppingCart size={24}/>;
-            {/* Użycie komponentu ShoppingCart */
-            }
         }
     };
 

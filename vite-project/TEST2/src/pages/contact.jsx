@@ -1,5 +1,6 @@
 import React from "react";
 import './_contact.scss';
+import './_mixin.scss';
 
 export const Contact = () => {
     return (

@@ -1,18 +1,20 @@
 import React, {useContext} from "react";
 import {PRODUCTS} from "../products.js";
-import { ShopContext } from "../context/Shop-context.jsx";
+import {ShopContext} from "../context/Shop-context.jsx";
 import {CartItem} from "./cart-item.jsx";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import '../_mixin.scss';
 
 import "./_cart.scss";
+
 export const Cart = () => {
-    const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+    const {cartItems, getTotalCartAmount, checkout} = useContext(ShopContext);
     const totalAmount = getTotalCartAmount();
 
     const navigate = useNavigate();
 
 
-    const handleProceedToOrder = () =>{
+    const handleProceedToOrder = () => {
         navigate('/order');
     }
 
@@ -24,7 +26,7 @@ export const Cart = () => {
             <div className="cart">
                 {PRODUCTS.map((product) => {
                     if (cartItems[product.id] !== 0) {
-                        return <CartItem data={product} />;
+                        return <CartItem data={product}/>;
                     }
                 })}
             </div>
@@ -32,7 +34,7 @@ export const Cart = () => {
             {totalAmount > 0 ? (
                 <div className="checkout">
                     <p> W Całości: {totalAmount}zł </p>
-                    <button onClick={() => navigate("/")}> kontynuuj </button>
+                    <button onClick={() => navigate("/")}> kontynuuj</button>
                     <button
                         onClick={() => {
                             checkout();

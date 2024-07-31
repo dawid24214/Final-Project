@@ -6,6 +6,7 @@ import {Contact} from "./contact.jsx";
 import {Cart} from "./Cart/cart.jsx";
 import {ShopContextProvider} from "./context/Shop-context.jsx";
 import Order from "./OrderNow/Order.jsx";
+import './_mixin.scss';
 
 
 const Layout = () => {
