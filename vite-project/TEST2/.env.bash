@@ -1,0 +1,2 @@
+VITE_SUPABASE_URL=VITE_SUPABASE_URL=https://ymtmipvgkpzvtepviqtd.supabase.co
+                  VITE_SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltdG1pcHZna3B6dnRlcHZpcXRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjIxMTMxNjEsImV4cCI6MjAzNzY4OTE2MX0.uCqqWgrXbhr_tcDwzMjVNIT1pY9FN6DRlil-xcj7ie4
